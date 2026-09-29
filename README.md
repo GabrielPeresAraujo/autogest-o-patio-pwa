@@ -1,17 +1,21 @@
-# autogestao_patio
+[readme.md](https://github.com/user-attachments/files/32774519/readme.md)
+# autogestao-patio-pwa
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```text
+autogestao-patio-pwa/
+├── .github/
+│   ├── workflows/
+│   │   └── ci.yml                 # Pipeline de CI (Build, Linter e Testes)
+│   └── PULL_REQUEST_TEMPLATE.md   # Template formal para Pull Requests
+├── lib/                           # Código-fonte da aplicação (MVC Pattern)
+│   ├── controllers/              # Regras de negócio e gerenciamento de estado
+│   ├── models/                   # Entidades de dados (Veículo, Status, Usuário)
+│   ├── views/                    # Telas PWA (Login, Catálogo/Pátio, Lead WhatsApp)
+│   └── services/                 # Integrações (Hive Local Storage, Supabase, API)
+├── test/                          # Suíte de testes automatizados
+│   ├── unit/                     # Testes unitários de validação e formatação
+│   └── integration/              # Testes de integração de fluxos e cache
+├── .gitignore                     # Arquivos ignorados pelo Git
+├── README.md                      # Documentação técnica e instruções do projeto
+└── pubspec.yaml                   # Gerenciador de dependências e scripts do projeto
+```
